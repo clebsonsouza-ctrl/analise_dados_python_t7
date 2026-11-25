@@ -1,6 +1,5 @@
-pandas
-psycopg2-binary
-gdown
-SQLAlchemy
-matplotlib
-jupyter
+gdown==6.1.0
+matplotlib==3.10.0
+pandas==2.2.3
+psycopg2-binary==2.9.12
+SQLAlchemy==2.0.51
