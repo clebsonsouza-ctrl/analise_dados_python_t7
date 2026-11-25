@@ -11,23 +11,6 @@ PASTA_RAIZ = Path(__file__).resolve().parent
 # Essa linha monta o caminho da pasta data
 PASTA_DADOS = PASTA_RAIZ / "data"
 
-
-
-# def carregar_env():
-#     """Le o arquivo .env (se existir) e joga as variaveis para os.environ."""
-#     arquivo_env = PASTA_RAIZ / ".env"
-#     if not arquivo_env.exists():
-#         return
-#     for linha in arquivo_env.read_text(encoding="utf-8").splitlines(): #Transforma o conteúdo em uma lista de linhas.
-#         linha = linha.strip()
-#         # ignora linhas vazias e comentarios
-#         if not linha or linha.startswith("#") or "=" not in linha:
-#             continue
-#         chave, valor = linha.split("=", 1)
-#         os.environ.setdefault(chave.strip(), valor.strip()) #O método setdefault() somente adiciona o valor se a variável ainda não existir.
-
-
-
 # Define a função responsável por carregar as variáveis de ambiente.
 def carregar_env():
 
