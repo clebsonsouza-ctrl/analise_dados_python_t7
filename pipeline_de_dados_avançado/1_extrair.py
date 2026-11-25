@@ -14,23 +14,6 @@ import config
 # Importa as funções de comunicação com o PostgreSQL.
 import banco
 
-
-# # ---------------------------------------------------------------------------
-# # Passo 1 - Baixar o arquivo .zip do Google Drive
-# # ---------------------------------------------------------------------------
-# def baixar_zip():
-#     """Baixa o .zip do Drive (so se ele ainda nao estiver na pasta data/)."""
-#     config.PASTA_DADOS.mkdir(exist_ok=True)
-#     destino = config.PASTA_DADOS / "bases.zip"
-
-#     if destino.exists():
-#         print("[1/3] O arquivo ja foi baixado antes - pulando o download.")
-#     else:
-#         print("[1/3] Baixando o arquivo do Google Drive...")
-#         gdown.download(id=config.DRIVE_FILE_ID, output=str(destino))
-#     return destino
-
-
 # Responsável por baixar o arquivo compactado e armazená-lo na pasta data.
 def baixar_zip():
 
