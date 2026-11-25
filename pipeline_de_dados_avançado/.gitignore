@@ -1,0 +1,8 @@
+.env
+.zip
+.csv
+data/
+__pycache__/
+*.pyc
+~$*.docx
+*.docx
